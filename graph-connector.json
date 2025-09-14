@@ -10,8 +10,8 @@ components:
       type: oauth2
       flows:
         authorizationCode:
-          authorizationUrl: https://login.microsoftonline.com/08b9339-1984-441e-916c-92ae7abcb168/oauth2/v2.0/authorize
-          tokenUrl: https://login.microsoftonline.com/08b9339-1984-441e-916c-92ae7abcb168/oauth2/v2.0/token
+          authorizationUrl: https://login.microsoftonline.com/908b9339-1984-441e-916c-92ae7abcb168/oauth2/v2.0/authorize
+          tokenUrl: https://login.microsoftonline.com/908b9339-1984-441e-916c-92ae7abcb168/oauth2/v2.0/token
           scopes:
             openid: OpenID
             profile: Basic profile
@@ -34,4 +34,3 @@ paths:
     get:
       summary: List OneDrive root items
       responses: { "200": { description: OK } }
-
