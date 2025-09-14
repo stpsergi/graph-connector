@@ -4,43 +4,6 @@ info:
   version: "1.0"
 servers:
   - url: https://graph.microsoft.com/v1.0
-components:
-  securitySchemes:
-    oauth2:
-      type: oauth2
-      flows:
-        authorizationCode:
-          authorizationUrl: https://login.microsoftonline.com/908b9339-1984-441e-916c-92ae7abcb168/oauth2/v2.0/authorize
-          tokenUrl: https://login.microsoftonline.com/908b9339-1984-441e-916c-92ae7abcb168/oauth2/v2.0/token
-          scopes:
-            openid: OpenID
-            profile: Basic profile
-            offline_access: Refresh token
-            Mail.Read: Read mail
-            Files.ReadWrite.All: Read/write OneDrive
-security:
-  - oauth2:
-      - openid
-      - profile
-      - offline_access
-      - Mail.Read
-      - Files.ReadWrite.All
-paths:
-  /me/messages:
-    get:
-      summary: Get user mail
-      responses: { "200": { description: OK } }
-  /me/drive/root/children:
-    get:
-      summary: List OneDrive root items
-      responses: { "200": { description: OK } }
-
-openapi: 3.0.1
-info:
-  title: Custom Microsoft Graph Connector
-  version: "1.0"
-servers:
-  - url: https://graph.microsoft.com/v1.0
 
 components:
   securitySchemes:
