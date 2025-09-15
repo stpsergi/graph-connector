@@ -1,0 +1,14 @@
+{
+  "openapi": "3.0.0",
+  "info": { "title": "NoAuth Minimal", "version": "1.0.0" },
+  "servers": [{ "url": "https://graph.microsoft.com/v1.0" }],
+  "paths": {
+    "/": {
+      "get": {
+        "summary": "Ping",
+        "operationId": "ping",
+        "responses": { "200": { "description": "OK" } }
+      }
+    }
+  }
+}
